@@ -1,6 +1,7 @@
 header{
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 nav{
   background: white;
@@ -10,10 +11,35 @@ nav a{
   color: gray !important;
 }
 .logo{
-  width: 80%;
-  
+  width: 90%;
+}
+.logoBlanco{
+  width: 18%;
 }
 #viaja{
   background-image: url(../img/taxi.jpg);
-  height: 600px;
+  height: 690px;
+  background-size: cover;
+  color:white;
+  padding-top: 16%;
+}
+h4>small{
+  color: white !important;
+  background-color: #FFC300;
+  padding: 10%;
+}
+h4{
+  margin: -52px 0 40px;
+}
+.page-header{
+  margin-bottom: 40px;
+}
+.btn{
+  color: black;
+  background: white;
+  margin-top: 1%;
+}
+.jumbotron{
+  background-color: #FFC300;
+  border-radius: 0 !important;
 }
