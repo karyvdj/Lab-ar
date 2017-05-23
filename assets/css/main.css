@@ -43,7 +43,7 @@ h4{
   background-color: #F8AA02;
   border-radius: 0 !important;
 }
-#app{
+#app, #tarifas{
   background: #F8AA02;
   padding: 4.5%;
 }
@@ -73,4 +73,28 @@ h4{
 }
 .alinear{
   margin: 0 5% 5%;
+}
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+#tarifas{
+  color:white;
+}
+.form-control{
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color:#F8AA02 ;
+}
+.btn{
+  border-radius: 0px;
+  color: #242424;
+}
+.marginTop{
+  margin-top: 7%;
+}
+.thumbnail{
+  background: none;
+  border-radius: 0px;
+  padding: 7px;
 }
