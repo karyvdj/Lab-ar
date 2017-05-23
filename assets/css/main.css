@@ -16,6 +16,16 @@ nav a{
 .logoBlanco{
   width: 18%;
 }
+.icon-bar{
+  background:gray;
+}
+#inicioSesion .glyphicon-ice-lolly-tasted{
+  font-size: 100px;
+  color:black;
+}
+.fondoModal{
+  background: #39C0BC;
+}
 #viaja{
   background-image: url(../img/taxi.jpg);
   height: 690px;
@@ -35,10 +45,14 @@ h4{
 .page-header{
   margin-bottom: 40px;
 }
-.btn{
+#viaja .btn{
   color: black;
   background: white;
   margin-top: 1%;
+}
+#viaja .btn:hover{
+  background:#77B9DD;
+  color: white;
 }
 .jumbotron{
   background-color: #F8AA02;
