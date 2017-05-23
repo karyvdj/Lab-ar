@@ -17,7 +17,7 @@ nav a{
   width: 18%;
 }
 #viaja{
-  background-image: url(../img/taxi.jpg);
+  background-image: url(../img/taxi2.jpg);
   height: 690px;
   background-size: cover;
   color:white;
@@ -25,7 +25,7 @@ nav a{
 }
 h4>small{
   color: white !important;
-  background-color: #FFC300;
+  background-color: #F8AA02;
   padding: 10%;
 }
 h4{
@@ -40,6 +40,18 @@ h4{
   margin-top: 1%;
 }
 .jumbotron{
-  background-color: #FFC300;
+  background-color: #F8AA02;
   border-radius: 0 !important;
+}
+#app{
+  background: #F8AA02;
+  padding: 4.5%;
+}
+#app p, h2{
+  color: white;
+  padding: 3%;
+}
+.bordeSecApp{
+  border: 1px solid white;
+  padding: 2.5%;
 }
