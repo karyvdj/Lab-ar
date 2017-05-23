@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/lab.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/movile.css">
   </head>
   <body>
     <header class="container-fluid">
@@ -17,10 +18,10 @@
             <img alt="Brand" src="assets/img/logoForma.png" class="logo">
           </a>
         </div>
-        <ul class="nav nav-pills navbar-right">
+        <ul class="nav nav-pills navbar-right ocultarMovile">
           <li role="presentation"><a href="#viaja">Viaja</a></li>
           <li role="presentation"><a href="#conduce">Conduce</a></li>
-          <li role="presentation"><a href="#">Iniciar sesión</a></li>
+          <li role="presentation"><a href="#tarifas">Iniciar sesión</a></li>
         </ul>
       </nav>
     </header>
@@ -30,18 +31,18 @@
         <section class="row">
           <div class="jumbotron col-md-5 col-md-push-7">
             <h2>Disfruta el viaje <br> Eres dueño de tu tiempo</h2>
-            <p>
+            <p class="ocultarMovile">
               <small>Viaja con</small>
               <img src="assets/img/logoBlanco.png" alt="logo" class="logoBlanco">
             </p>
-            <button type="button" name="button" class="btn">
+            <button type="button" name="button" class="btn ocultarMovile">
               <strong>REGISTRATE</strong>
             </button>
-            <div class=" page-header"></div>
-            <h4 class="text-center">
+            <div class=" page-header ocultarMovile"></div>
+            <h4 class="text-center ocultarMovile">
               <small>o bien</small>
             </h4>
-            <button type="button" name="button" class="btn">
+            <button type="button" name="button" class="btn ocultarMovile">
               <strong>Conviértete en un conductor</strong>
             </button>
           </div>
@@ -56,8 +57,8 @@
             <img src="assets/img/iPhone6Plus.png" alt="iPhone">
           </div>
           <div class="col-md-5 col-md-offset-2 lead">
-            <h2>Descarga la nueva app</h2>
-            <p>
+            <h2 class="ocultarMovile">Descarga la nueva app</h2>
+            <p class="ocultarMovile">
               La versión actualizada de LabCar está llena de nuevas funciones para
               llegar a donde quieras aún más fácil y rápido. <br>
               <br>Con sólo tocar un botón, un  auto llega justo a tu ubicación.
@@ -125,14 +126,14 @@
 <!-- footer -->
     <footer class="container-fluid">
       <section class="row">
-        <section class="col-md-10 col-md-offset-1">
+        <section class="col-md-10 col-md-offset-1 col-sm-12">
           <div class="page-header">
             <img src="assets/img/logoBlanco.png" alt="">
           </div>
         </section>
       </section>
       <section class="row">
-        <section class="col-md-3 col-md-offset-3">
+        <section class="col-md-3 col-md-offset-3 col-sm-12">
           <ul>
             <li>Viaja</li>
             <li>Conduce</li>
@@ -144,7 +145,7 @@
             <li>Seguridad</li>
           </ul>
         </section>
-        <section class="col-md-3">
+        <section class="col-md-3 ocultarMovile">
           <ul>
             <li>Oportunidades</li>
             <li>Nuestra Historia</li>
@@ -156,7 +157,7 @@
             <li>Coders</li>
           </ul>
         </section>
-        <section class="col-md-3 marginTop">
+        <section class="col-md-3 secFooterImg">
           <img src="assets/img/appstore.png" alt="appstore" class="imgFooter">
           <img src="assets/img/enBadgeWebGeneric.png" alt="googleplay" class="imgFooter">
         </section>
