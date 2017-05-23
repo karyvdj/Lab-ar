@@ -47,11 +47,30 @@ h4{
   background: #F8AA02;
   padding: 4.5%;
 }
-#app p, h2{
+#app p, #app h2{
   color: white;
   padding: 3%;
 }
 .bordeSecApp{
-  border: 1px solid white;
+  border: 2px solid white;
   padding: 2.5%;
+}
+#conduce{
+  background-image: url(../img/conduce.jpg);
+  background-size: cover;
+}
+.secConduce{
+  background: rgba(7,0,23,.6);
+  height: 400px;
+  color: white;
+}
+.secConduce>h2{
+  margin: 30% 5% 5%;
+}
+.secConduce>button{
+  background: #F8AA02;
+  color: white;
+}
+.alinear{
+  margin: 0 5% 5%;
 }
