@@ -98,3 +98,25 @@ h4{
   border-radius: 0px;
   padding: 7px;
 }
+footer{
+  background: #39383A;
+  padding: 3%;
+}
+footer ul, footer p{
+  list-style: none;
+  color: white;
+}
+footer li{
+  padding: 10px;
+}
+.glyphicon{
+  color: white;
+  padding: 7px;
+}
+footer .page-header{
+  margin-top:0px;
+}
+.imgFooter{
+  padding: 10px;
+  width: 50%;
+}
