@@ -28,10 +28,87 @@
         <ul class="nav nav-pills navbar-right ocultarMovile">
           <li role="presentation"><a href="#viaja">Viaja</a></li>
           <li role="presentation"><a href="#conduce">Conduce</a></li>
-          <li role="presentation"><a href="#inicioSesion" data-toggle="modal" data-target="#inicioSesion">Iniciar sesión</a></li>
+          <li role="presentation"><a href="#myModal" data-toggle="modal" data-target="#inicioSesion">Inicia sesión</a></li>
         </ul>
       </nav>
     </header>
+  <!-- modals -->
+    <div class="modal fade" id="inicioSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">INICIAR SESIÓN</h4>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img src="assets/img/perfil.png" class="perfilImg">
+            </div>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="usuario" class="col-sm-2 control-label">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="usuario" placeholder="Username">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contrasena" class="col-sm-2 control-label">
+                  <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                </label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="contrasena" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10 text-center">
+                  <button type="submit" class="btn btn-success"><strong>LOGIN</strong></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+              <p>Forgot your password? &nbsp;<a href="#!">Click here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="registro">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" name="button" class=" btn btn-default">Ya tienes una cuenta?</button>
+            <a href="#">O crear una cuenta nueva</a>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-inline">
+                <input class="form-control" placeholder="Nombre">
+              </div>
+              <br>
+              <div class="form-inline">
+                <input class="form-control" placeholder="Apellido">
+              </div>
+              <br>
+              <div class="form-inline">
+                <input class="form-control" placeholder="Correo electronico">
+              </div>
+              <br>
+              <div class="form-group">
+                <button type="button" name="button" class=" btn btn-default">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <!-- seccion viaja -->
     <article id="viaja">
@@ -43,7 +120,7 @@
               <small>Viaja con</small>
               <img src="assets/img/logoBlanco.png" alt="logo" class="logoBlanco">
             </p>
-            <button type="button" name="button" class="btn ocultarMovile">
+            <button type="button" name="button" class="btn ocultarMovile" data-toggle="modal" data-target="#registro">
               <strong>REGISTRATE</strong>
             </button>
             <div class=" page-header ocultarMovile"></div>
@@ -57,25 +134,7 @@
         </section>
       </section>
     </article>
-    <!-- modal inicio sesion -->
-        <!-- <article id="inicioSesion" class=" fondoModal">
-          <section class="row">
-            <div class="col-md-4">
-              <span class="glyphicon glyphicon-ice-lolly-tasted"></span>
-          <section class="row">
-            <input type="text" name="Username" placeholder="Username">
-            <input type="text" name="Password" placeholder="Password">
-          </section> -->
 
-              <!-- <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                <div class="modal-dialog modal-sm" role="document">
-                  <div class="modal-content">
-                    ...
-                  </div>
-                </div>
-              </div> -->
-          <!-- </section>
-        </article> -->
 <!-- seccion app   -->
     <article id="app" class="container-fluid">
       <section class="row">
@@ -205,7 +264,7 @@
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/boostrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>

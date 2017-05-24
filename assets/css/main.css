@@ -19,12 +19,8 @@ nav a{
 .icon-bar{
   background:gray;
 }
-#inicioSesion .glyphicon-ice-lolly-tasted{
-  font-size: 100px;
-  color:black;
-}
-.fondoModal{
-  background: #39C0BC;
+.perfilImg{
+  width: 20%;
 }
 #viaja{
   background-image: url(../img/taxi.jpg);
@@ -105,6 +101,7 @@ h4{
 #tarifas .btn{
   border-radius: 0px;
   color: #242424;
+  background: white;
 }
 .marginTop{
   margin-top: 7%;
