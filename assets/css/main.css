@@ -47,8 +47,11 @@ h4{
   margin-top: 1%;
 }
 #viaja .btn:hover{
-  background:#77B9DD;
+  background:#137fd0;
   color: white;
+}
+#inicioSesion i{
+  color: gray;
 }
 .jumbotron{
   background-color: #F8AA02;
@@ -93,7 +96,7 @@ h4{
 #tarifas{
   color:white;
 }
-.form-control{
+#tarifas .form-control{
   border-radius: 5px;
   border: 1px solid white;
   background-color:#F8AA02 ;
@@ -115,17 +118,17 @@ footer{
   background: #39383A;
   padding: 3%;
 }
-footer ul, footer p{
-  list-style: none;
+footer li>a, footer p, footer i{
   color: white;
 }
-footer li{
+footer li>a:hover{
+  color:#F8AA02;
+}
+footer li, footer i{
   padding: 10px;
+  list-style: none;
 }
-.glyphicon{
-  color: white;
-  padding: 7px;
-}
+
 footer .page-header{
   margin-top:0px;
 }
@@ -134,5 +137,5 @@ footer .page-header{
   width: 50%;
 }
 .secFooterImg{
-  margin-top: 17%;
+  margin-top: 13%;
 }

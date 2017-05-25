@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Labcar</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/lab.ico">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/movile.css">
@@ -15,25 +15,25 @@
     <header class="container-fluid">
       <nav class="row">
         <div class="navbar-header">
-      <!-- probando el menu de hamburguesa en movile -->
+<!-- probando el menu de hamburguesa en movile -->
           <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!--  -->
+<!--  -->
           <a class="navbar-brand" href="#">
             <img alt="Brand" src="assets/img/logoForma.png" class="logo">
           </a>
         </div>
         <ul class="nav nav-pills navbar-right ocultarMovile">
-          <li role="presentation"><a href="#viaja">Viaja</a></li>
+          <li role="presentation"><a href="#tarifas">Viaja</a></li>
           <li role="presentation"><a href="#conduce">Conduce</a></li>
           <li role="presentation"><a href="#myModal" data-toggle="modal" data-target="#inicioSesion">Inicia sesión</a></li>
         </ul>
       </nav>
     </header>
-    <!-- modals -->
+<!-- modals -->
       <div class="modal fade" id="inicioSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -50,7 +50,7 @@
               <form class="form-horizontal">
                 <div class="form-group marginTop">
                   <label for="usuario" class="col-sm-2 control-label">
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <i class="fa fa-user" aria-hidden="true"></i>
                   </label>
                   <div class="col-sm-8">
                     <input type="text" class="form-control" placeholder="Username">
@@ -58,7 +58,7 @@
                 </div>
                 <div class="form-group">
                   <label for="contrasena" class="col-sm-2 control-label">
-                    <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                    <i class="fa fa-lock" aria-hidden="true"></i>
                   </label>
                   <div class="col-sm-8">
                     <input type="password" class="form-control" placeholder="Password">
@@ -78,36 +78,82 @@
         </div>
       </div>
 
-      <div class="modal fade" tabindex="-1" role="dialog" id="registro">
+      <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <button type="button" name="button" class=" btn btn-default">Ya tienes una cuenta?</button>
-              <a href="#">O crear una cuenta nueva</a>
+            <div class="modal-header text-center">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">¿YA TIENES UNA CUENTA?</h4>
             </div>
             <div class="modal-body">
-              <form>
-                <div class="form-inline">
-                  <input class="form-control" placeholder="Nombre">
-                </div>
-                <br>
-                <div class="form-inline">
-                  <input class="form-control" placeholder="Apellido">
-                </div>
-                <br>
-                <div class="form-inline">
-                  <input class="form-control" placeholder="Correo electronico">
-                </div>
-                <br>
-                <div class="form-group">
-                  <button type="button" name="button" class=" btn btn-default">Enviar</button>
-                </div>
+              <label for="usuario" class="col-sm-12 control-label text-center">
+                <a href="#"><h5> O CREA UNA CUENTA NUEVA </h5></a>
+              </label>
+              <form class="form-horizontal">
+                  <section class="row">
+                      <div class="form-group marginTop">
+                        <div class="col-sm-5 col-sm-offset-1 ">
+                          <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col-sm-5">
+                          <input type="password" class="form-control" placeholder="Apellido">
+                        </div>
+                      </div>
+                  </section>
+                  <section class="row">
+                    <div class="form-group">
+                      <div class="col-sm-10 col-sm-offset-1 ">
+                        <input type="text" class="form-control" placeholder="Correo electrónico">
+                      </div>
+                    </div>
+                  </section>
+                  <section class="row">
+                    <div class="form-group">
+                      <div class="col-sm-10 col-sm-offset-1 ">
+                        <input type="text" class="form-control" placeholder="Teléfono">
+                      </div>
+                    </div>
+                  </section>
+                  <section class="row">
+                    <div class="form-group">
+                      <div class="col-sm-10 col-sm-offset-1 ">
+                        <input type="text" class="form-control" placeholder="Contraseña">
+                      </div>
+                    </div>
+                  </section>
+                  <section class="row">
+                    <div class="form-group">
+                      <div class="col-sm-10 col-sm-offset-1 ">
+                        <input type="text" class="form-control" placeholder="Ciudad">
+                      </div>
+                    </div>
+                  </section>
+                  <section class="row">
+                    <div class="form-group">
+                      <div class="col-sm-10 col-sm-offset-1 ">
+                        <input type="text" class="form-control" placeholder="(Opcional) Código de invitación">
+                      </div>
+                    </div>
+                  </section>
+                  <section class="row">
+                    <section class="col-sm-10 col-sm-offset-1">
+                      <select class="form-control">
+                        <option>¿Cómo te enteraste acerca de LabCar?</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </section>
+                  </section>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <div class="col-sm-12  text-center">
+                <button type="button" class="btn btn-info">ENVIAR</button>
+              </div>
             </div>
           </div>
         </div>
@@ -224,40 +270,54 @@
       <section class="row">
         <section class="col-md-3 col-md-offset-3 col-sm-12">
           <ul>
-            <li>Viaja</li>
-            <li>Conduce</li>
-            <li>Ciudades</li>
-            <li>Ciudades</li>
-            <li>Entregas</li>
-            <li>¿Cómo funciona?</li>
-            <li>Países</li>
-            <li>Seguridad</li>
+            <li><a href="#">Viaja</a></li>
+            <li><a href="#">Conduce</a></li>
+            <li><a href="#">Ciudades</a></li>
+            <li><a href="#">Ciudades</a></li>
+            <li><a href="#">Entregas</a></li>
+            <li><a href="#">¿Cómo funciona?</a></li>
+            <li><a href="#">Países</a></li>
+            <li><a href="#">Seguridad</a></li>
           </ul>
         </section>
         <section class="col-md-3 ocultarMovile">
           <ul>
-            <li>Oportunidades</li>
-            <li>Nuestra Historia</li>
-            <li>API de LAbcar</li>
-            <li>Eventos</li>
-            <li>Desarrolladores</li>
-            <li>Servicios</li>
-            <li>Laboratoria</li>
-            <li>Coders</li>
+            <li><a href="#">Oportunidades</a></li>
+            <li><a href="#">Nuestra Historia</a></li>
+            <li><a href="#">API de LAbcar</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Desarrolladores</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Laboratoria</a></li>
+            <li><a href="#">Coders</a></li>
           </ul>
         </section>
         <section class="col-md-3 secFooterImg">
-          <img src="assets/img/appstore.png" alt="appstore" class="imgFooter">
-          <img src="assets/img/enBadgeWebGeneric.png" alt="googleplay" class="imgFooter">
+          <a href="#">
+            <img src="assets/img/appstore.png" alt="appstore" class="imgFooter">
+          </a>
+          <a href="#">
+            <img src="assets/img/enBadgeWebGeneric.png" alt="googleplay" class="imgFooter">
+          </a>
         </section>
       </section>
       <section class="row">
         <div class="col-md-3 col-md-offset-1">
-          <span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span>
-          <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
-          <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span>
-          <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-          <span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-apple" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </a>
         </div>
         <section class="col-md-10 col-md-offset-1 page-header"></section>
       </section>
